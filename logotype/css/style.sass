@@ -1,0 +1,461 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+$blue: #109CF1
+$greycolor: #546E7A
+$blackcolor: #101010
+$blackcolorTwo: #10242B
+$whitecolor: #ffffff
+$greencolor: #2ED47A
+a
+    text-decoration: none
+@mixin container() 
+    max-width: 1410px
+    width: 100%
+    display: block
+    margin: 0 auto
+@mixin btn-green()
+    background: #2ED47A
+    border: 2px solid #2ED47A
+    box-shadow: 0px 4px 10px rgba(46, 212, 122, 0.396078)
+    border-radius: 4px
+    font-family: Poppins
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 27px
+    text-align: center
+    color: #FFFFFF
+    text-decoration: none
+    transition: .3s ease-in-out
+    display: flex
+    justify-content: center
+    align-items: center
+    &:hover
+        color: #2ED47A
+        background: #FFFFFF
+        transition: .3s ease-in-out
+@mixin btn-blue()
+    border: 2px solid #109CF1
+    box-sizing: border-box
+    filter: drop-shadow(0px 4px 10px rgba(16, 156, 241, 0.235294))
+    border-radius: 4px
+    font-family: Poppins
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 27px
+    color: #109CF1
+    transition: .3s ease-in-out
+    display: flex
+    justify-content: center
+    align-items: center
+    &:hover
+        color: #FFFFFF
+        background: #109CF1
+        transition: .3s ease-in-out
+
+
+body
+    max-width: 1920px
+    width: 100%
+    display: block
+    margin: 0 auto
+    position: relative
+    header 
+        width: 100%
+        background-color: #ffffff
+        margin: 0 auto
+        display: block
+        position: fixed
+        max-width: 1920px
+        z-index: 999
+        box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.14)
+        top: 0
+        .container
+            @include container
+            display: flex
+            justify-content: space-between
+            height: 80px
+            align-items: center
+            .header-logo a
+                display: flex
+                .header-logo_img
+                    margin-right: 13px
+                .header-logo_text 
+                    display: flex
+                    flex-direction: column
+                    span:nth-child(1)
+                        font-family: Poppins
+                        font-style: normal
+                        font-weight: bold
+                        font-size: 22px
+                        line-height: 33px
+                        color: $blue
+                        height: 28px
+                    span:nth-child(2)
+                        font-family: Poppins
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 21px
+                        color: #10242B
+        nav 
+            display: flex
+            ul.nav 
+                display: flex
+                margin: 0 13px 0 0
+                padding: 0
+                align-items: center
+                li.menu-item 
+                    list-style: none
+                    padding: 0 29px
+                    a
+                        font-family: Poppins
+                        font-style: normal
+                        font-weight: 600
+                        font-size: 16px
+                        line-height: 24px
+                        text-decoration: none
+                        color: $greycolor
+                        transition: .3s ease-in-out
+                        &:hover
+                            color: $blue
+                            transition: .3s ease-in-out
+                            
+
+            button
+                border: 2px solid $greencolor
+                box-sizing: border-box
+                border-radius: 5px
+                font-family: Poppins
+                font-style: normal
+                font-weight: bold
+                font-size: 16px
+                line-height: 24px
+                color: $greencolor
+                padding: 0px 33px
+                height: 45px
+                background-color: #ffffff
+                transition: .3s ease-in-out
+                cursor: pointer
+                &:hover
+                    background-color: $greencolor
+                    transition: .3s ease-in-out
+                    color: #ffffff
+        .exit
+            display: none
+        .open
+            display: none
+    main  
+        margin: 80px 0 0 0
+        .power-block
+            background-image: url(./img/Hero.png)   
+            background-repeat: no-repeat    
+        .power-block-items
+            @include container
+            display: flex
+            justify-content: space-between
+            .power-block-text
+                margin-top: 72px
+                width: 42.5%
+                h3
+                    font-family: Poppins
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 28px
+                    line-height: 150%
+                    color: $blackcolorTwo
+                h1
+                    font-family: Poppins
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 48px
+                    line-height: 79%
+                    color: $blue
+                    margin-bottom: 24px
+                p
+                    font-family: Poppins
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 20px
+                    line-height: 150%
+                    color: $greycolor
+                    margin-bottom: 43px
+                ul li
+                    font-family: Poppins
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 20px
+                    line-height: 220%
+                    color: $greycolor
+                    &::marker
+                        content: ''
+                    span
+                        color: #109CF1
+                        margin-right: 11px
+                .power-block-btn 
+                    margin-top: 44px
+                    display: flex
+                    &-green 
+                        div
+                            @include btn-green
+                            width: 177px
+                            height: 55px
+                            margin: 0 12px
+                    &-blue 
+                        
+                        div
+                            @include btn-blue
+                            width: 268px
+                            height: 55px
+                            svg
+                                margin-right: 20px  
+                                transition: .3s ease-in-out
+                                path#Vector 
+                                    transition: .3s ease-in-out
+                        &:hover
+                            path#Vector 
+                                fill: red
+                                transition: .3s ease-in-out
+            .power-block_img 
+                margin-top: 44px
+        .second-section
+            max-width: 1240px
+            height: 545px
+            margin: 46px auto 114px
+            &_items
+                display: flex
+                .second-section_text 
+                    margin-left: 76px
+                    h3
+                        font-family: Poppins
+                        font-style: normal
+                        font-weight: 600
+                        font-size: 18px
+                        line-height: 150%
+                        color: #192A3E
+                    h2
+                        font-family: Poppins
+                        font-style: normal
+                        font-weight: bold
+                        font-size: 32px
+                        line-height: 150%
+                        color: $blue
+                        margin-bottom: 15px
+                    p
+                        font-family: Poppins
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 18px
+                        line-height: 160%
+                        color: #192A3E
+                    a
+                        div
+                            @include btn-green
+                            margin-top: 40px
+                            width: 265px
+                            height: 55px
+        .contacts
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            background-image: url(./img/bg.png)
+            padding: 129px 0 126.5px
+            h2
+                font-family: Poppins
+                font-style: normal
+                font-weight: 600
+                font-size: 36px
+                line-height: 140%
+                text-align: center
+                color: #101010
+                width: 100%
+                margin-bottom: 10px
+            p
+                font-family: Poppins
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                line-height: 180%
+                text-align: center
+                color: #605469
+                width: 100%
+                margin-bottom: 66px
+            .contacts-items
+                display: flex
+                height: 509px
+                justify-content: center
+                width: 100%
+                .contacts-map
+                    max-width: 810px
+                    // min-width: 810px
+                    width: 100%
+                    box-shadow: 0px 4px 23px 8px rgba(0, 0, 0, 0.04)
+                    border-radius: 10px
+                    overflow: hidden
+                .contacts-feedback
+                    max-width: 450px
+                    width: 100%
+                    background: #FFFFFF
+                    box-shadow: 0px 4px 23px 8px rgba(0, 0, 0, 0.04)
+                    border-radius: 10px
+                    padding: 32.52px 35px 40px
+                    margin-left: 30px
+                    p
+                        font-family: Poppins
+                        font-style: normal
+                        font-weight: 600
+                        font-size: 18px
+                        line-height: 150%
+                        color: #101010
+                        margin-bottom: 34px
+                    form
+                        display: flex
+                        flex-direction: column
+                        input 
+                            background: #FAFBFC
+                            border: 1px solid #DDD7DE
+                            box-sizing: border-box
+                            border-radius: 7px
+                            padding: 14.52px 11px 11.48px
+                            margin-bottom: 20px
+                            height: 50px
+                            outline: none
+                            font-size: 16px
+                            color: #8B7F8D
+                            &::placeholder
+                                font-family: Poppins
+                                font-style: normal
+                                font-weight: normal
+                                font-size: 16px
+                                line-height: 24px
+                                color: #8B7F8D
+                        textarea
+                            background: #FAFBFC
+                            border: 1px solid #DDD7DE
+                            box-sizing: border-box
+                            border-radius: 7px
+                            padding: 14.52px 11px 11.48px
+                            margin-bottom: 20px
+                            height: 80px
+                            outline: none
+                            font-size: 16px
+                            color: #8B7F8D
+							max-width: 377px
+							width: 100%
+                            &::placeholder
+                                font-family: Poppins
+                                font-style: normal
+                                font-weight: normal
+                                font-size: 16px
+                                line-height: 24px
+                                color: #8B7F8D
+                        button
+                            @include btn-green
+                            margin-top: 10px
+                            max-width: 381px
+							width: 100%
+                            height: 55px
+                            cursor: pointer
+    footer
+        background-color: #081838
+        color: #ffffff
+        padding: 19px 0 21px
+        .footer-items
+            @include container
+            display: flex
+            flex-direction: column
+            .footer-item
+                display: flex
+                justify-content: space-between
+                .footer-item_icon
+                    display: flex
+                    width: 500px
+                    flex-wrap: wrap
+                    margin-top: 22px
+                    a
+                        display: flex
+                        .footer-logo_img
+                            height: 50px
+                            margin-right: 13px
+                        .footer-logo_text 
+                            display: flex
+                            flex-direction: column
+                            height: 50px
+                            span:nth-child(1)
+                                font-family: Poppins
+                                font-style: normal
+                                font-weight: bold
+                                font-size: 22px
+                                line-height: 33px
+                                color: $blue
+                                height: 28px
+                            span:nth-child(2)
+                                font-family: Poppins
+                                font-style: normal
+                                font-weight: 500
+                                font-size: 14px
+                                line-height: 21px
+                                color: #ffffff
+                    p
+                        margin: 19.5px 0 12px 0
+                        font-family: Nunito
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 150%
+                        height: 63px
+                .visitorcounter
+                    p.visitorcounter-name
+                        font-family: Poppins
+                        font-style: normal
+                        font-weight: bold
+                        font-size: 16px
+                        line-height: 24px
+                        text-align: right
+                        padding-left: 4px
+                    .visitorcounter-total
+                        display: flex
+                        align-items: center
+                        font-family: Poppins
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 12px
+                        line-height: 18px
+                        margin-bottom: 2px
+                        svg
+                            margin-right: 5px
+                    img
+                        margin: 8px 0 4px 4px
+
+            hr
+                margin: 15px 0 21px
+            .footer-item.two
+                p
+                    font-family: Poppins
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 18px
+                                
+
+ .wpcf7 form .wpcf7-response-output
+    margin: -5em 0.5em 1em
+    padding: 0.2em 1em
+    border: 2px solid #00a0d2
+	border-color: #00a0d2
+    transition: .3s ease-in-out
+    border-radius: 11px
+    background-color: #ffffff
+    box-shadow: 2px 2px 10px 2px #cccccc    
+
+    
+                        
+                    
+                
+            
+
+
+

@@ -1,0 +1,232 @@
+@media screen and (max-width: 1410px) {
+    body header .container {
+        padding: 10px 20px;
+    }
+    main .power-block-items {
+        padding: 0 20px;
+    }
+    body main .contacts{
+        padding: 129px 20px 126.5px;
+    }
+    
+    body main .power-block-items .power-block-text h3 {
+        font-size: 24px;
+    }
+    body main .power-block-items .power-block-text h1 {
+        font-size: 37px;
+    }
+    body main .power-block-items .power-block-text p {
+        font-size: 16px;
+    }
+    body main .power-block-items .power-block-text ul li {
+        font-size: 16px;
+    }
+    body main .power-block-items .power-block-text .power-block-btn-blue div {
+        font-size: 14px;
+        width: 240px;
+    }
+    body main .power-block-items .power-block-text .power-block-btn-green div {
+        font-size: 16px;
+        width: 150px;
+    }
+    body main .second-section {
+        padding: 0 20px;
+    }
+    body main .contacts .contacts-items {
+        width: 100%;
+        justify-content: center;
+    }
+    body footer {
+        padding: 19px 20px 21px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    body main .power-block-items .power-block_img {
+        width: 50%;
+    }
+    body main .power-block-items .power-block_img img{
+        width: 100%;
+    }
+    body main .power-block-items .power-block-text {
+        width: 50%;
+    }
+    body main .second-section_items .second-section_img{
+        width: 40%;
+    }
+    body main .second-section_items .second-section_img img{
+        width: 100%;
+    }
+    body main .second-section_items .second-section_text {
+        width: 60%;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 992px) {
+    body header nav ul.nav li.menu-item {
+        padding: 0 12px;
+    }
+    body header nav button {
+        padding: 0px 15px;
+        height: 39px;
+    }
+    body main .second-section_items {
+        flex-direction: column-reverse;
+    }
+    body main .second-section_items .second-section_text {
+        width: 100%;
+        margin-left: 0;
+    }
+    body main .second-section_items .second-section_img {
+        width: 100%;
+        margin: 31px 0 0 0;
+    }
+    body main .second-section_items .second-section_img img {
+        max-width: 400px;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    body main .second-section {
+        height: auto;
+        margin: 46px auto 0px;
+    }
+    body main .contacts .contacts-items {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    body main .contacts .contacts-items .contacts-map {
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    body main .contacts .contacts-items .contacts-feedback {
+        margin-left: 0;
+    }
+    body main .contacts {
+        padding: 50px 20px;
+    }
+    .visitorcounter {
+        min-width: 130px;
+    }
+    body main .contacts p {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body header .container {
+        flex-direction: row;
+        height: auto;
+    }
+    body header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    body header nav button {
+        margin: 10px;
+    }
+    body header nav ul.nav {
+        padding: 10px 0;
+    }
+    body main .power-block-items {
+        flex-direction: column;
+    }
+    body main .power-block-items .power-block-text {
+        width: 100%;
+    }
+    body main .power-block-items .power-block-text {
+        margin-top: 40px;
+    }
+    body main .power-block-items .power-block_img img {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    body main .power-block-items .power-block_img {
+        width: 100%;
+    }
+    body main .contacts .contacts-items .contacts-feedback form button {
+        max-width: 381px;
+        width: 100%;
+    }
+    body main .contacts p {
+        font-size: 14px;
+    }
+    body main .contacts h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    body header nav ul.nav {
+        flex-direction: column;
+        margin: 0 0 0 0;
+    }
+    body header nav ul.nav li.menu-item {
+        padding: 7px 12px;
+    }
+    body header nav {
+        display: none;
+    }
+    body header .open {
+        display: block;
+        padding: 10px 0 0 0;
+    }
+    body header .container {
+        align-items: baseline;
+    }
+    body main .power-block-items .power-block-text .power-block-btn {
+        flex-direction: column;
+    }
+    body main .power-block-items .power-block-text .power-block-btn-green div {
+        margin: 10px 0px;
+    }
+    body main .power-block-items .power-block-text h3 {
+        font-size: 20px;
+        line-height: 100%;
+    }
+    body main .power-block-items .power-block-text h1 {
+        font-size: 30px;
+        line-height: 100%;
+    }
+    body main .power-block-items .power-block-text p {
+        font-size: 14px;
+    }
+    body main .second-section_items .second-section_text p {
+        font-size: 14px;
+    }
+    body main .second-section_items .second-section_text h2 {
+        font-size: 25px;
+    }
+    body main .second-section_items .second-section_text h3 {
+        font-size: 15px;
+    }
+    body main .second-section_items .second-section_text a div {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    body main .contacts .contacts-items .contacts-feedback form button {
+        font-size: 16px;
+    }
+    body footer .footer-items .footer-item {
+        flex-direction: column;
+    }
+    body footer .footer-items .footer-item .footer-item_icon {
+        width: 100%;
+    }
+    body footer .footer-items .footer-item .visitorcounter p.visitorcounter-name {
+        text-align: left;
+        margin-top: 20px;
+    }
+    body footer .footer-items .footer-item .footer-item_icon p {
+        height: auto;
+    }
+		body main .contacts .contacts-items .contacts-feedback form .wpcf7-submit {
+		font-size: 15px;
+	}
+    
+
+}
+
